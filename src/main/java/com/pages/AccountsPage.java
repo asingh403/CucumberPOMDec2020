@@ -16,11 +16,11 @@ public class AccountsPage {
 		this.driver = driver;
 	}
 	
-	public String getAccountPageTitle() {
+	public String getAccountsPageTitle() {
 		return driver.getTitle();
 	}
 	
-	public int getAccountSectionCount() {
+	public int getAccountsSectionCount() {
 		return driver.findElements(PageLocators.accountSections).size();
 	}
 	

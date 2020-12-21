@@ -40,7 +40,7 @@ public class LoginPage {
 	}
 	
 	public AccountsPage doLogin(String un, String pwd) {
-		System.out.println("login with : " + un + "and" + pwd);
+		System.out.println("login with : " + un + " and " + pwd);
 		
 		driver.findElement(PageLocators.emailId).sendKeys(un);
 		driver.findElement(PageLocators.password).sendKeys(pwd);
