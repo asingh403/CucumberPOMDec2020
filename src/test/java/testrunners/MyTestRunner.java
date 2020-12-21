@@ -10,7 +10,8 @@ import io.cucumber.junit.CucumberOptions;
 		//src/test/resources/AppFeatures/AccountsPage.feature
 		features = { "src/test/resources/AppFeatures" }, 
 		glue = { "stepdefinitions", "AppHooks" }, 
-		plugin = {"pretty" 
+		plugin = {"pretty",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 				
 		}
 	)

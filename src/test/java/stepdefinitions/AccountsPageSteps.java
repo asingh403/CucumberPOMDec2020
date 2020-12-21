@@ -12,7 +12,6 @@ import com.qa.factory.DriverFactory;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 
 public class AccountsPageSteps {
 
@@ -38,12 +37,6 @@ public class AccountsPageSteps {
 		System.out.println("Accounts Page title is: " + title);
 		Assert.assertEquals("My account - My Store", title);
 	}
-	
-//	@When("user gets the title of the page")
-//	public void user_gets_the_title_of_the_page() {
-//		String title = accountsPage.getAccountsPageTitle();
-//		System.out.println("WHEN Page title is: " + title);
-//	}
 
 	@Then("user gets accounts section")
 	public void user_gets_accounts_section(DataTable sectionsTable) {

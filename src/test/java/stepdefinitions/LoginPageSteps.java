@@ -21,8 +21,8 @@ public class LoginPageSteps {
 		DriverFactory.getDriver().get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
 	}
 
-	@When("user get the title of the page")
-	public void user_get_the_title_of_the_page() {
+	@When("user gets the title of the page")
+	public void user_gets_the_title_of_the_page() {
 		title = loginPage.getLoginPageTitle();
 	    System.out.println("Page title :: " + title);
 	}
