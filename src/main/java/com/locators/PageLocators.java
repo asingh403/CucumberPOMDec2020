@@ -13,11 +13,7 @@ public class PageLocators {
 
 	// *********** Accounts Page Locators ****************
 	public static final By accountSections = By.cssSelector("div#center_column span");
-	
-	
-	
-	
-	
-	
+	public static final By callUsNow = By.xpath("//*[text() = '0123-456-789']");
+	public static final By itemLinks = By.xpath("//*[@class='item']/a");
 	
 }

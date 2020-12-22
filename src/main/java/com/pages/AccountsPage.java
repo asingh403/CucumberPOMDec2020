@@ -38,5 +38,23 @@ public class AccountsPage {
 		return accountsList;
 	}
 	
-
+	
+	public String callUsNow() {
+		return driver.findElement(PageLocators.callUsNow).getText();
+	}
+	
+	public String itemSectionLinksConnect() {
+		String url = "";
+		
+		List<WebElement> links =  driver.findElements(PageLocators.itemLinks);
+		System.out.println("total Nums of links :: " + links.size());
+		
+		for(int i=0; i<links.size(); i++) {
+			WebElement ele = links.get(i);
+			
+			url = ele.getAttribute("href");
+			System.out.println("URL :: " + url);
+		}
+		return url;
+	}
 }

@@ -8,10 +8,12 @@ import org.junit.Assert;
 import com.pages.AccountsPage;
 import com.pages.LoginPage;
 import com.qa.factory.DriverFactory;
+import com.qa.util.Utility;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class AccountsPageSteps {
 
@@ -55,6 +57,20 @@ public class AccountsPageSteps {
 	@Then("accounts section count should be {int}")
 	public void accounts_section_count_should_be(Integer expectedSectionCount) {
 		Assert.assertTrue(accountsPage.getAccountsSectionCount() == expectedSectionCount);
+	}
+	
+	@Then("user sees the Call us now Number {string}")
+	public void user_sees_the_call_us_now_number(String contactNums) {
+	    Assert.assertEquals(contactNums, accountsPage.callUsNow());
+	}
+
+	@Then("user sees all the given links in the footer of item section")
+	public void user_sees_all_the_given_links_in_the_footer_of_item_section() {
+		
+		String expctLinksResponse = Utility.verifyLinksActive(accountsPage.itemSectionLinksConnect());
+		
+		Assert.assertEquals("OK", expctLinksResponse.trim());
+		//System.out.println("Expected OK :: " + expctLinksResponse);		
 	}
 
 }

@@ -23,3 +23,7 @@ Then user gets accounts section
 |Home|
 And accounts section count should be 6
 
+Scenario: Accounts section customer care contact
+Given user is on Accounts page
+Then user sees the Call us now Number "0123-456-789"
+And user sees all the given links in the footer of item section
