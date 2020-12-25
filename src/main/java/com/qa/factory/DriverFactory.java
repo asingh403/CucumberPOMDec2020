@@ -2,6 +2,8 @@ package com.qa.factory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -25,12 +27,12 @@ public class DriverFactory {
 			tlDriver.set(new ChromeDriver());
 		}
 		else if(browser.equals("firefox")) {
-			WebDriverManager.chromedriver().setup();
-			tlDriver.set(new ChromeDriver());
+			WebDriverManager.firefoxdriver().setup();
+			tlDriver.set(new FirefoxDriver());
 		}
 		else if(browser.equals("IE")) {
-			WebDriverManager.chromedriver().setup();
-			tlDriver.set(new ChromeDriver());
+			WebDriverManager.iedriver().setup();
+			tlDriver.set(new InternetExplorerDriver());
 		}
 		else {
 			System.out.println("Please pass the correct browser value . . ." + browser);

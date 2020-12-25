@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 23, 2020 01:30:27 AM</span></a>
+<a href="#"><span class="badge badge-primary">Dec 26, 2020 12:09:21 AM</span></a>
 </li>
 </ul>
 </div>
@@ -57,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,25 +71,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 23, 2020 01:30:27 AM</h3>
+<h3>Dec 26, 2020 12:09:21 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 23, 2020 01:31:53 AM</h3>
+<h3>Dec 26, 2020 12:12:22 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>2</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -100,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>2</b> features passed
+<div><small data-tooltip='50%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='50%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>6</b> scenarios passed</small></div>
+<div><small data-tooltip='83%'><b>5</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='16%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,9 +148,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>23</b> steps passed</small></div>
+<div><small data-tooltip='95%'><b>23</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
+<small data-tooltip='4%'><b>1</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -162,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Account Page Feature":46.87,"Login Page feature":37.612
+"Account Page Feature":179.268,"Login Page feature":176.423
 };
 </script>
 <div class="row">
@@ -190,16 +195,16 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
 <tbody>
 <tr>
-<td>AppName</td>
-<td>AutomationPractice</td>
+<td>build</td>
+<td>1.1</td>
 </tr>
 <tr>
 <td>user</td>
 <td>Ashutosh Singh</td>
 </tr>
 <tr>
-<td>build</td>
-<td>1.1</td>
+<td>AppName</td>
+<td>AutomationPractice</td>
 </tr>
 <tr>
 <td>os</td>
@@ -214,19 +219,19 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
-failParent: 0,
+passParent: 1,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 6,
-failChild: 0,
+passChild: 5,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
 passGrandChild: 23,
-failGrandChild: 0,
+failGrandChild: 1,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
@@ -243,6 +248,7 @@ eventsCount: 5,
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -263,7 +269,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Account Page Feature</p>
             <p class="text-sm">
-              <span>01:30:29 AM</span> / <span>00:00:46:870</span>
+              <span>00:09:22 AM</span> / <span>00:02:59:268</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -272,9 +278,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Account Page Feature</h5>
-<span class='badge badge-success'>12.23.2020 01:30:29</span>
-<span class='badge badge-danger'>12.23.2020 01:31:16</span>
-<span class='badge badge-default'>00:00:46:870</span>
+<span class='badge badge-success'>12.26.2020 00:09:22</span>
+<span class='badge badge-danger'>12.26.2020 00:12:22</span>
+<span class='badge badge-default'>00:02:59:268</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -317,7 +323,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Accounts section count</div>
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Accounts section count</div>
       </div>
     </div>
         <div class="collapse">
@@ -352,7 +358,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Accounts section customer care contact</div>
+        <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>Accounts section customer care contact</div>
       </div>
     </div>
         <div class="collapse">
@@ -385,26 +391,26 @@ eventsCount: 5,
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="29"
+        <li class="test-item"  status="fail" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Login Page feature</p>
             <p class="text-sm">
-              <span>01:31:16 AM</span> / <span>00:00:37:612</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>00:09:22 AM</span> / <span>00:02:56:423</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Login Page feature</h5>
-<span class='badge badge-success'>12.23.2020 01:31:16</span>
-<span class='badge badge-danger'>12.23.2020 01:31:53</span>
-<span class='badge badge-default'>00:00:37:612</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<h5 class="test-status text-fail">Login Page feature</h5>
+<span class='badge badge-success'>12.26.2020 00:09:22</span>
+<span class='badge badge-danger'>12.26.2020 00:12:19</span>
+<span class='badge badge-default'>00:02:56:423</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -413,10 +419,13 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="30"><span class="badge log pass-bg mr-2">Pass</span>Login Page title</div>
+        <div class="node" id="4"><span class="badge log fail-bg mr-2">Fail</span>Login Page title</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="stepdefinitions.LoginPageSteps.user_is_on_login_page()">
                 <span>Given user is on login page</span>
@@ -428,8 +437,27 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.LoginPageSteps.page_title_should_be(java.lang.String)">
-                <span>Then page title should be "Login - My Store"</span>
+              <div class="step fail-bg" title="stepdefinitions.LoginPageSteps.page_title_should_be(java.lang.String)">
+                <span>Then page title should be "Login - My Store_"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.LoginPageSteps.page_title_should_be(LoginPageSteps.java:32)
+	at ?.page title should be "Login - My Store_"(file:///C:/Users/ASHUTOSH%20SINGH/eclipse-workspace-Java11/CucucmberPOMSeries/src/test/resources/AppFeatures/LoginPage.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>AppHooks.ApplicationHooks.tearDwon(io.cucumber.java.Scenario)</span>
+      <div>Login_Page_title
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
       <div>
       </div>
               </div>
@@ -439,7 +467,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>Forget Password Link</div>
+        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>Forget Password Link</div>
       </div>
     </div>
         <div class="collapse">
@@ -460,7 +488,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>Login with correct credentials</div>
+        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Login with correct credentials</div>
       </div>
     </div>
         <div class="collapse">
@@ -542,7 +570,7 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>01:30:29 AM</td>
+<td>00:09:22 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Accounts page title</a>
 <div class="">
@@ -552,11 +580,63 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>01:30:46 AM</td>
+<td>00:10:24 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='11'>Accounts section count</a>
+<a href="#" class="linked" test-id='1' id='20'>Accounts section count</a>
 <div class="">
 <span class="badge badge-default">Account Page Feature.Accounts section count</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:10:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='17'>Then page title should be "Login - My Store_"</a>
+<div class="">
+<span class="badge badge-default">Login Page feature.Login Page title.Then page title should be "Login - My Store_"</span>
 </div>
 </td>
 </tr>
